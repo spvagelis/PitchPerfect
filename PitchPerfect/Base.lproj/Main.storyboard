@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PWs-In-W5W">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PWs-In-W5W">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -30,13 +30,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqz-hF-dwn">
-                                <rect key="frame" x="133.5" y="418.5" width="107" height="21"/>
+                                <rect key="frame" x="133.5" y="412" width="107" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azc-MI-8sG">
-                                <rect key="frame" x="154.5" y="447.5" width="64" height="64"/>
+                                <rect key="frame" x="154.5" y="434" width="64" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="GsV-eG-O8h"/>
                                     <constraint firstAttribute="width" constant="64" id="YeL-Vz-BO0"/>
@@ -53,8 +53,8 @@
                             <constraint firstItem="4ok-eW-mRe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="367-b2-p95"/>
                             <constraint firstItem="gqz-hF-dwn" firstAttribute="centerX" secondItem="4ok-eW-mRe" secondAttribute="centerX" id="cDd-iP-GuW"/>
                             <constraint firstItem="azc-MI-8sG" firstAttribute="centerX" secondItem="gqz-hF-dwn" secondAttribute="centerX" id="f1L-1B-jv2"/>
-                            <constraint firstItem="azc-MI-8sG" firstAttribute="top" secondItem="gqz-hF-dwn" secondAttribute="bottom" constant="8" id="tJa-VS-eCa"/>
-                            <constraint firstItem="gqz-hF-dwn" firstAttribute="top" secondItem="4ok-eW-mRe" secondAttribute="bottom" constant="7.5" id="xaA-k4-JhB"/>
+                            <constraint firstItem="azc-MI-8sG" firstAttribute="top" secondItem="gqz-hF-dwn" secondAttribute="bottom" constant="1" id="tJa-VS-eCa"/>
+                            <constraint firstItem="gqz-hF-dwn" firstAttribute="top" secondItem="4ok-eW-mRe" secondAttribute="bottom" constant="1" id="xaA-k4-JhB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="M0G-VV-RXR"/>
@@ -185,7 +185,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PWs-In-W5W" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="LlU-u3-gZ6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
