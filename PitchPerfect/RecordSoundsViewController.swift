@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
+class RecordSoundsViewController: UIViewController {
     
     var audioRecorder: AVAudioRecorder!
 
@@ -55,19 +55,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         
     }
     
-    // MARK: - Audio Recorder Delegate
-
-    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        
-        if flag {
-            
-            performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
-        } else {
-            
-            print("recording was not successful")
-        }
-        
-    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -100,4 +87,39 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
 
 }
+
+extension RecordSoundsViewController: AVAudioRecorderDelegate {
+    
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        
+        if flag {
+            
+            performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
+        } else {
+            
+            print("recording was not successful")
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
