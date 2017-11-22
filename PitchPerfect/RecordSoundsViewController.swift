@@ -97,7 +97,9 @@ extension RecordSoundsViewController: AVAudioRecorderDelegate {
             performSegue(withIdentifier: "stopRecording", sender: audioRecorder.url)
         } else {
             
-            print("recording was not successful")
+            let alert = UIAlertController(title: "Error", message: "Recording was not successfull", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(alert, animated: true)
         }
         
     }
